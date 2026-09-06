@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mecab-python3-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mecab-python3-{{ version }}.tar.gz
   sha256: 70988bab263696456f75d3d8910c75aea477a9d08054ad7ef85be5470dd3f65b
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - mecab-py = MeCab.cli:parse
     - mecab-py-info = MeCab.cli:info
